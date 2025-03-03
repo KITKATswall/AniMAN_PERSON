@@ -1,0 +1,62 @@
+/* style.css */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/037/940/526/small_2x/beautiful-spring-nature-landscape-and-cherry-blossom-tree-animated-background-in-japanese-anime-style-seamless-looping-animated-background-video.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    font-size: 24px;
+}
+
+.character-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.character img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.character:hover {
+    transform: scale(1.1);
+}
+
+.character-info {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+}
+
+.character:active .character-info {
+    display: block;
+}
